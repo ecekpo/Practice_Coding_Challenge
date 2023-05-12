@@ -11,6 +11,15 @@ let sum = new ListNode(0);
 let currentNode = sum;
 
 //Execute while loop 
+// If l1 exists, assign its value to val1; otherwise, assign zero
+let val1 = l1 ? l1.val : 0;
+// If l2 exists, assign its value to val2; otherwise, assign zero
+let val2 = l2 ? l2.val : 0;
+// Add val1, val2, and carry, and assign the result to currentSum
+let currentSum = val1 + val2 + carry;
+        // If currentSum is greater than or equal to 10, set carry to 1; otherwise, set it to 0
+        carry = currentSum >= 10 ? 1 : 0;
+}
 
 
 //Return the next node of sum, which is the actual sum of l1 and l2
